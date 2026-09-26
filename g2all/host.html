@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>BROTHERSHACK</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden}
+body{font-family:Arial,sans-serif}
+.bg{position:fixed;inset:0;background:url("loading.jpg") center/cover no-repeat}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.28)}
+.panel{position:absolute;left:50%;top:72%;transform:translate(-50%,-50%);width:min(90%,760px);padding:28px 20px;text-align:center;color:#fff;background:rgba(0,0,0,.58);border:1px solid rgba(255,255,255,.18);border-radius:22px;box-shadow:0 10px 45px rgba(0,0,0,.65)}
+h1{margin:0;font-size:clamp(22px,4vw,38px);line-height:1.55}
+p{margin:10px 0 0;font-size:clamp(14px,2.5vw,20px);opacity:.9}
+.spinner{width:42px;height:42px;margin:18px auto 0;border:5px solid rgba(255,255,255,.25);border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="overlay"></div>
+<div class="panel">
+<h1>يرجى الانتظار، قد يستغرق بضعة ثوانٍ لتفعيل الجولد هين</h1>
+<p>جاري تجهيز الصفحة...</p><div class="spinner"></div>
+</div>
+<script>
+setTimeout(function(){window.location.replace("cacheslopkit.html");},1200);
+</script>
+</body>
+</html>
